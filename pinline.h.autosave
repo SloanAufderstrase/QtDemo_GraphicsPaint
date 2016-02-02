@@ -1,0 +1,18 @@
+#ifndef PINLINE_H
+#define PINLINE_H
+
+#include <QGraphicsItem>
+
+class PinLine : public QGraphicsItem
+{
+public:
+    PinLine();
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+    QRectF boundingRect()const;
+    
+private:
+    bool isFlooting;
+         
+};
+
+#endif // PINLINE_H
